@@ -1,0 +1,13 @@
+.achContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(15, 22, 36);
+    color: rgb(242, 245, 247);
+}

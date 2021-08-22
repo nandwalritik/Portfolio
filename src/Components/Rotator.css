@@ -1,0 +1,39 @@
+.blob-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    z-index: 1;
+    opacity: 0.2;
+    /* -webkit-box-align: center; */
+}
+
+@keyframes spinanti {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.blob-content img {
+    position: absolute;
+}
+
+img {
+    display: block;
+}
