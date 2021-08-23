@@ -36,7 +36,7 @@ const App = () => {
       <Navbar />
       <Home />
       <About />
-      {/* <Project /> */}
+      <Project />
       <Experience />
       <Achievements />
     </>

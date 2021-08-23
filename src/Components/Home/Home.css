@@ -72,16 +72,16 @@ i:hover {
 }
 
 .resBtn {
-    width: 10vw;
-    height: 5vh;
-    /* padding: 6px;
-    margin: 3px; */
+    width:auto;
+    height: auto;
+    padding: 11px;
+    margin: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgb(99, 235, 201);
     z-index: 2;
-    border-radius: 2rem;
+    border-radius: 1.3rem;
     text-align: center;
     
 }
