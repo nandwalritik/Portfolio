@@ -17,7 +17,7 @@ const About = () => {
                         improve human life and existing applications.I have also worked on Full-Stack
                         web and mobile applications and I am already loving it.I am passionate about learning
                         new things and when I find something really interesting I love to dig deeper into the
-                        nitty gritties of how they work.<br/>
+                        nitty gritties of how they work.<br />
                         In my free time I play Guitar or I would simply go out for Cycling.
                     </p>
                 </div>
