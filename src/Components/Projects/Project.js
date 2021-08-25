@@ -11,7 +11,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import projectArr from './projectItems'
-import Box from '@material-ui/core/Box'
 const useStyles = makeStyles({
     root: {
         maxWidth: "30vw",
@@ -21,7 +20,8 @@ const useStyles = makeStyles({
         marginBottom: "5px",
         alignSelf: "center",
         backgroundColor: "rgb(220,220,220)",
-        height: "45vh"
+        height: "45vh",
+        justifyContent:"space-between"
     },
     media: {
         height: "15vh",
@@ -46,22 +46,22 @@ const Project = () => {
                                     title={item.Name}
                                 />
                                 <CardContent style={{ height: "16vh" }}>
-                                    <Typography gutterBottom variant="h5" component="h3" style={{ color: "black" }}>
+                                    <Typography gutterBottom variant="h5" component="h3" style={{ color: "black",fontSize:"1.5rem" }}>
                                         {item.Name}
                                     </Typography>
-                                    <Typography style={{ color: "black" }}>
+                                    <Typography style={{ color: "black",fontSize:"1rem" }}>
                                         {item.Description}
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>
-                            <CardActions style={{backgroundColor:"rgb(88,88,88)",height:"8vh"}}>
-                                <Button size="small" color="primary">
+                            <CardActions style={{backgroundColor:"rgb(88,88,88)",marginTop:"auto"}}>
+                                <Button size="small" color="primary" style={{marginBottom:"0px",marginTop:"auto"}}>
                                     <a
                                         href={item.Github}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <i className="fab fa-github fa-3x" />
+                                        <i className="fab fa-github fa-3x"/>
                                     </a>
                                 </Button>
                             </CardActions>

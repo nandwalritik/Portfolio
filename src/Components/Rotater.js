@@ -19,12 +19,12 @@ const Rotater = () => {
     return (
         <div style={container}>
             <figure className='blob-content'>
-                <img src={oval1} style={{ animation: `spinanti 6s linear infinite`, width: "800px" }} />
+                <img src={oval1} style={{ animation: `spinanti 6s linear infinite`, width: "60vw" }} />
                 {/* <img src={oval2} style={{ animation: `spin 6s linear infinite`, width: "600px" }} /> */}
-                <img src={layer1} style={{ animation: `spinanti 6s linear infinite`, width: "200px" }} />
-                <img src={layer2} style={{ animation: `spin 7s ease-in-out infinite`, width: "180px" }} />
-                <img src={oval7} style={{ animation: `spinanti`, width: "150px" }} />
-                <img src={BHFO} className="child" style={{ width: "105px", borderRadius: "60px" }} />
+                <img src={layer1} style={{ animation: `spinanti 6s linear infinite`, width: "30vw" }} />
+                <img src={layer2} style={{ animation: `spin 7s ease-in-out infinite`, width: "18vw" }} />
+                <img src={oval7} style={{ animation: `spinanti`, width: "14vw" }} />
+                <img src={BHFO} className="child" style={{ width: "10vw", borderRadius: "50%" }} />
             </figure>
         </div >
     )

@@ -26,23 +26,14 @@ const Achievements = () => {
                                 <h3 className="vertical-timeline-element-title" style={{ color: "#7DF9FF" }}>{item.Name}</h3>
                                 <h4 className="vertical-timeline-element-subtitle" style={{ color: "white" }}>{item.problemSol}</h4>
                                 <h5 className="vertical-timeline-element-subtitle" style={{ color: "white" }}>{item.Description}</h5>
-
-                                {/* <ul>
-                                    {item.description.map((elem, ind) => {
-                                        return (
-                                            <li>
-                                                {elem}
-                                            </li>
-                                        )
-                                    })}
-                                </ul> */}
-
                             </VerticalTimelineElement>
                         )
                     ))
 
                 }
             </VerticalTimeline>
+            <div className="globalDivider" style={{ margin: "10px" }}>
+            </div>
         </div>)
 }
 export default Achievements

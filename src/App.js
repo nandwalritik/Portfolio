@@ -8,7 +8,7 @@ import "./App.css"
 import Experience from './Components/Experience/Experience'
 import Project from './Components/Projects/Project'
 import Achievements from './Components/Achievements/Achievements'
-
+import ContactMe from './Components/Footer/ContactMe'
 const App = () => {
   return (
     <>
@@ -39,6 +39,7 @@ const App = () => {
       <Project />
       <Experience />
       <Achievements />
+      <ContactMe/>
     </>
   )
 }
