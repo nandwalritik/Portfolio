@@ -39,24 +39,35 @@ h1, h2, h3, h4, h5, h6 {
     margin: 24px 0;
     /* padding: 4; */
     font-size: 30px;
-}
-
-.table {
-    display: table;
-    z-index: 1;
-}
-
-ul {
     text-align: center;
+    display: inline-block;
+    margin-right: 30px;
+    align-self: center;
+    z-index: 2;
 }
-
-ul, li {
+.socialContent{
     display: inline-block;
     text-align: center;
     margin-right: 30px;
     align-self: center;
     z-index: 2;
 }
+.table {
+    display: table;
+    z-index: 1;
+}
+
+/* .table > ul {
+    text-align: center;
+} */
+
+/* .table > ul, li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 30px;
+    align-self: center;
+    z-index: 2;
+} */
 
 i {
     align-items: center;
@@ -72,7 +83,7 @@ i:hover {
 }
 
 .resBtn {
-    width:auto;
+    width: auto;
     height: auto;
     padding: 11px;
     margin: 2px;
@@ -83,7 +94,6 @@ i:hover {
     z-index: 2;
     border-radius: 1.3rem;
     text-align: center;
-    
 }
 
 .resBtn:hover {

@@ -24,7 +24,7 @@ const Home = () => {
                             {socialLinks.map(
                                 (item) => {
                                     return (
-                                        <li key={item.name}>
+                                        <li key={item.name} className="socialContent">
                                             <a
                                                 href={item.url}
                                                 target="_blank"

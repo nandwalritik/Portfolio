@@ -11,18 +11,20 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import projectArr from './projectItems'
+import Box from '@material-ui/core/Box'
 const useStyles = makeStyles({
     root: {
         maxWidth: "30vw",
         marginLeft: "3px",
         marginRight: "3px",
-        marginTop: "4px",
-        marginBottom: "4px",
-        alignSelf:"center"
-
+        marginTop: "5px",
+        marginBottom: "5px",
+        alignSelf: "center",
+        backgroundColor: "rgb(220,220,220)",
+        height: "45vh"
     },
     media: {
-        height: "10vh",
+        height: "15vh",
     },
 });
 
@@ -33,14 +35,7 @@ const Project = () => {
             <div className="globalDivider">
             </div>
             <h2 className="globalDividerTitle">Projects</h2>
-            <div style={{
-                display: 'flex',
-                flexWrap: "wrap",
-                alignContent: 'center',
-                // alignItems:"center",
-                // justifyContent:"space-evenly",
-                overflow: 'hidden',
-            }}>
+            <div className="box">
                 {
                     projectArr.map((item, index) => (
                         <Card className={classes.root}>
@@ -50,22 +45,24 @@ const Project = () => {
                                     image={item.img}
                                     title={item.Name}
                                 />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        Lizard
+                                <CardContent style={{ height: "16vh" }}>
+                                    <Typography gutterBottom variant="h5" component="h3" style={{ color: "black" }}>
+                                        {item.Name}
                                     </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                                        across all continents except Antarctica
+                                    <Typography style={{ color: "black" }}>
+                                        {item.Description}
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>
-                            <CardActions>
+                            <CardActions style={{backgroundColor:"rgb(88,88,88)",height:"8vh"}}>
                                 <Button size="small" color="primary">
-                                    Share
-                                </Button>
-                                <Button size="small" color="primary">
-                                    Learn More
+                                    <a
+                                        href={item.Github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <i className="fab fa-github fa-3x" />
+                                    </a>
                                 </Button>
                             </CardActions>
                         </Card>

@@ -18,24 +18,23 @@ const Experience = () => {
                         (
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
-                                contentStyle={{ background: 'gray', color: '#fff' }}
-                                contentArrowStyle={{ borderRight: '7px solid  gray' }}
+                                contentStyle={{ background: '	#606060', color: '#fff' }}
+                                contentArrowStyle={{ borderRight: '7px solid  	#606060' }}
                                 date={item.time}
-                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                                iconStyle={{ background: '#7FFFD4', color: '#fff' }}
                             // icon={<WorkIcon />}
                             >
-                                <h3 className="vertical-timeline-element-title">{item.Position}</h3>
-                                <h4 className="vertical-timeline-element-subtitle">{item.Company}</h4>
-                                <p>
+                                <h3 className="vertical-timeline-element-title" style={{ color: "#7DF9FF" }}>{item.Position}</h3>
+                                <h4 className="vertical-timeline-element-subtitle" style={{ color: "white" }}>{item.Company}</h4>
+                                <ul>
                                     {item.description.map((elem, ind) => {
                                         return (
-                                            <>
+                                            <li>
                                                 {elem}
-                                                <br />
-                                            </>
+                                            </li>
                                         )
                                     })}
-                                </p>
+                                </ul>
 
                             </VerticalTimelineElement>
                         )

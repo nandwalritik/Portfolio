@@ -11,3 +11,8 @@
     background: rgb(15, 22, 36);
     color: rgb(242, 245, 247);
 }
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 2em;
+}
