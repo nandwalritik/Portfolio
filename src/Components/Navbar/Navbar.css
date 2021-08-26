@@ -4,11 +4,13 @@ body {
 }
 
 nav {
-    z-index: 2;
+    z-index: 3;
+    position: sticky;
+    top: 0
 }
 
 .NavbarItems {
-    background: rgb(15, 22, 36);
+    background: rgb(25, 44, 82);
     color: rgb(242, 245, 247);
     height: 8vh;
     width: auto;
@@ -29,7 +31,7 @@ nav {
     text-align: center;
     width: 70vw;
     justify-content: center;
-    z-index: 2;
+    z-index: 3;
     /* margin-right: 2em; */
 }
 

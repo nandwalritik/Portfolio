@@ -4,33 +4,42 @@ import '../Home/Home.css'
 const ContactMe = () => {
     return (
         <div style={{
-            backgroundColor:"gray",
-            alignSelf:"center",
-            width:"100%",
-            height:"20vh",
-            justifyContent:"center",
-            alignContent:"center",
+            backgroundColor: "gray",
+            alignSelf: "center",
+            width: "100vw",
+            height: "30vh",
+            justifyContent: "center",
+            alignContent: "center",
+            alignItems: "center"
 
         }}>
-            <div className="table" style={{}}>
-                <ul className="social">
-                    {/* {socialLinks.map(
-                        (item) => {
-                            return (
-                                <li key={item.name} className="socialContent">
-                                    <a
-                                        href={item.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <i className={item.className} />
-                                    </a>
-                                </li>
-                            );
-                        }
-                    )} */}
-                </ul>
+            <div style={{ backgroundColor: "gray", height: "50%", alignSelf: "center", justifyContent: "center", paddingTop: "40px" }}>
+                <h1 style={{ margin: 0, paddingTop: "20px", textAlign: "center" }}>GET IN TOUCH</h1>
+                <div style={{ textAlign: "center", alignSelf: "center" }}>
+                    <ul style={{ margin: "20px", fontSize: "32px", display: "inline-block" }}>
+                        {socialLinks.map(
+                            (item) => {
+                                return (
+                                    <li key={item.name} style={{ display: "inline-block", textAlign: "center", alignSelf: "center", marginRight: "30px" }}>
+                                        <a
+                                            href={item.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <i className={item.className} />
+                                        </a>
+                                    </li>
+                                );
+                            }
+                        )}
+                    </ul>
+                </div>
             </div>
+            {/* <div style={{ textAlign: "right" }}>
+                <h3 style={{ margin: 0, marginRight: "30px" }}>
+                    Indore , India
+                </h3>
+            </div> */}
         </div>
     )
 }
