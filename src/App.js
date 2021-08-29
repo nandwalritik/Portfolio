@@ -10,11 +10,8 @@ import Project from './Components/Projects/Project'
 import Achievements from './Components/Achievements/Achievements'
 import ContactMe from './Components/Footer/ContactMe'
 const App = () => {
-  const [loading, setLoading] = useState(true)
-  useEffect(() => {
-    setLoading(false)
-  }, [])
-  return loading ? <h1>loading...</h1> : (
+
+  return (
     <>
       <Particles
         params={{
@@ -46,5 +43,7 @@ const App = () => {
       <ContactMe />
     </>
   )
+
+
 }
 export default App;
