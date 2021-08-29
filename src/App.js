@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Home from './Components/Home/Home'
 import About from './Components/About/About'
 import Navbar from './Components/Navbar/Navbar'
@@ -10,7 +10,11 @@ import Project from './Components/Projects/Project'
 import Achievements from './Components/Achievements/Achievements'
 import ContactMe from './Components/Footer/ContactMe'
 const App = () => {
-  return (
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    setLoading(false)
+  }, [])
+  return loading ? <h1>loading...</h1> : (
     <>
       <Particles
         params={{
@@ -39,7 +43,7 @@ const App = () => {
       <Project />
       <Experience />
       <Achievements />
-      <ContactMe/>
+      <ContactMe />
     </>
   )
 }
