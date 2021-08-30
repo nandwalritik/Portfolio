@@ -8,7 +8,9 @@ const About = () => {
             <div className="globalDivider" />
             <h2 className="globalDividerTitle">About</h2>
             <div className="abtContentContainer">
-                <img src={ProfilePic} className="picContainer" />
+                <img src={ProfilePic} className="picContainer"  style={{
+                    resizeMode:'cover'
+                }}/>
                 <div className="abtContent">
                     <p>
                         I am a final year undergraduate at SGSITS, Indore, pursuing my B.Tech in Computer Science and Engineering. I am a Computer Vision Enthusiast, and I love that how we could use deep learning to improve human life and existing applications. I have also worked on Full-Stack web and mobile applications and I am already loving it. I am passionate about learning new things and when I find something really interesting I love to dig deeper into the nitty-gritty of how they work.<br/>

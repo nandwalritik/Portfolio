@@ -11,6 +11,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import projectArr from './projectItems'
+import { useMediaQuery } from 'react-responsive'
+
 const useStyles = makeStyles({
     root: {
         maxWidth: "30vw",
@@ -21,7 +23,7 @@ const useStyles = makeStyles({
         alignSelf: "center",
         backgroundColor: "rgb(220,220,220)",
         height: "45vh",
-        justifyContent:"space-between"
+        justifyContent: "space-between"
     },
     media: {
         height: "15vh",
@@ -30,6 +32,9 @@ const useStyles = makeStyles({
 
 const Project = () => {
     const classes = useStyles();
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-width: 1133px)'
+    })
     return (
         <div className="projectContainer" id="Projects">
             <div className="globalDivider">
@@ -46,22 +51,22 @@ const Project = () => {
                                     title={item.Name}
                                 />
                                 <CardContent style={{ height: "16vh" }}>
-                                    <Typography gutterBottom variant="h5" component="h3" style={{ color: "black",fontSize:"1.5rem" }}>
+                                    <Typography gutterBottom variant="h5" component="h3" style={{ color: "black", fontSize: "1.5rem" }}>
                                         {item.Name}
                                     </Typography>
-                                    <Typography style={{ color: "black",fontSize:"1rem" }}>
+                                    {isDesktopOrLaptop ? <Typography style={{ color: "black", fontSize: "1rem" }}>
                                         {item.Description}
-                                    </Typography>
+                                    </Typography> : <></>}
                                 </CardContent>
                             </CardActionArea>
-                            <CardActions style={{backgroundColor:"rgb(88,88,88)",marginTop:"auto"}}>
-                                <Button size="small" color="primary" style={{marginBottom:"0px",marginTop:"auto"}}>
+                            <CardActions style={{ backgroundColor: "rgb(88,88,88)", marginTop: "auto" }}>
+                                <Button size="small" color="primary" style={{ marginBottom: "0px", marginTop: "auto" }}>
                                     <a
                                         href={item.Github}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <i className="fab fa-github fa-3x"/>
+                                        <i className="fab fa-github fa-3x" />
                                     </a>
                                 </Button>
                             </CardActions>

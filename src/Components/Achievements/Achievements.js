@@ -5,13 +5,21 @@ import '../../App.css'
 import achData from './achievementsData'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { useMediaQuery } from 'react-responsive'
+
 const Achievements = () => {
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-width: 1186px)'
+    })
+
     return (
         <div className="expContainer" id="Achievements">
             <div className="globalDivider">
             </div>
             <h2 className="globalDividerTitle">Achievements</h2>
-            <VerticalTimeline>
+            <VerticalTimeline
+                animate={isDesktopOrLaptop}
+            >
                 {
                     achData.map((item, index) => (
                         (

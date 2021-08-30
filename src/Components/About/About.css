@@ -14,9 +14,7 @@
 
 .picContainer {
     width: 20vw;
-    height: 20vw;
-    border-radius: 20vw;
-    padding: 2rem;
+    border-radius: 12%;
 }
 
 p {
@@ -43,12 +41,11 @@ p {
     margin-left: 5vw;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1470px) {
     .picContainer {
         width: 180px;
-        height: 180px;
-        border-radius: 180px;
-        padding: 2rem;
+        border-radius: 10%;
+        margin: 2rem;
         align-self: center;
     }
     p {
