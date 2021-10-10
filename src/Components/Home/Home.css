@@ -1,17 +1,10 @@
-body,
-html {
+body, html {
     /* height: 100%; */
     margin: 0px !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     color: rgb(220, 236, 236);
-    ;
     font-family: system-ui !important;
 }
 
@@ -94,21 +87,4 @@ i:hover {
 
 .resBtn:hover {
     background: rgb(144, 194, 241);
-}
-
-@media screen and (max-width:1470px) {
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: rgb(202, 211, 228);
-        font-family: system-ui !important;
-        z-index: 100;
-    }
-    .container{
-        background-size: cover;
-    }
 }
