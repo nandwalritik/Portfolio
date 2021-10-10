@@ -40,8 +40,16 @@ const Achievements = () => {
 
                 }
             </VerticalTimeline>
-            <div className="globalDivider" style={{ margin: "10px" }}>
+            <div style={{display:"flex",flexDirection:"row",width:"100%",marginTop:"20vh"}}>
+                <div className="globalDivider" style={{ margin: "10px",marginRight:"auto" }}>
+                </div>
+                <div className="globalDivider" style={{ margin: "10px"}}>
+                </div>
+                <div className="globalDivider" style={{ margin: "10px" ,marginLeft:"auto"}}>
+                </div>
+
             </div>
+
         </div>)
 }
 export default Achievements

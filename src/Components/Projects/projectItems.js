@@ -27,7 +27,7 @@ const data = [
     {
         "Name": "AI-Swasthyam",
         "Description": "An app that guides without any personal trainer for exercises.",
-        "Github": "",
+        "Github": "https://github.com/nandwalritik/Pose-Estimator",
         "img": swasth
 
     },

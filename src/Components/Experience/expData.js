@@ -1,6 +1,6 @@
 const dataMap = [
     {
-        time: "May 2021 - Present",
+        time: "May 2021 - Sept 2021",
         Company: "Offnote Labs",
         Position: "Deep Learning Research Intern",
         description: [

@@ -1,11 +1,18 @@
-body, html {
+body,
+html {
     /* height: 100%; */
     margin: 0px !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: white;
-    font-family: "Space Grotesk", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(220, 236, 236);
+    ;
+    font-family: system-ui !important;
 }
 
 .container {
@@ -15,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 100%;
     background: url(/home/nandwalritik/portfolio/src/Assets/background.jpg) no-repeat;
     background-size: cover;
+    /* opacity: 0.9; */
 }
 
 .main-info {
@@ -86,4 +94,21 @@ i:hover {
 
 .resBtn:hover {
     background: rgb(144, 194, 241);
+}
+
+@media screen and (max-width:1470px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: rgb(202, 211, 228);
+        font-family: system-ui !important;
+        z-index: 100;
+    }
+    .container{
+        background-size: cover;
+    }
 }
